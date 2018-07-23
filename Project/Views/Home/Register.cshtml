@@ -1,0 +1,57 @@
+﻿@model User
+@{
+    ViewData["Title"] = "สมัครสมาชิก";
+}
+<h2>สมัครสมาชิก</h2>
+<div class="form-group">
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email)
+        @Html.EditorFor(m => m.Email)
+        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "Text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Password)
+        @Html.TextBoxFor(m => m.Password)
+        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "Text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.ConfirmPassword)
+        @Html.TextBoxFor(m => m.ConfirmPassword)
+        @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "Text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Fname)
+        @Html.EditorFor(m => m.Fname)
+        @Html.ValidationMessageFor(m => m.Fname, "", new { @class = "Text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Lname)
+        @Html.EditorFor(m => m.Lname)
+        @Html.ValidationMessageFor(m => m.Lname, "", new { @class = "Text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Address)
+        @Html.EditorFor(m => m.Address)
+        @Html.ValidationMessageFor(m => m.Address, "", new { @class = "Text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.ZipCode)
+        @Html.EditorFor(m => m.ZipCode)
+        @Html.ValidationMessageFor(m => m.ZipCode, "", new { @class = "Text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.City)
+        @Html.EditorFor(m => m.City)
+        @Html.ValidationMessageFor(m => m.City, "", new { @class = "Text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Tel)
+        @Html.EditorFor(m => m.Tel)
+        @Html.ValidationMessageFor(m => m.Tel, "", new { @class = "Text-danger" })
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-default" />
+    </div>
+</div>
+
+
